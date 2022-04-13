@@ -23,6 +23,7 @@ const readFromBlobOrFile = (blob) => (
 
 const fixOrientationFromUrlOrBlobOrFile = (blob) => (
   new Promise((resolve) => {
+    console.log('Hi from loadImage');
     blueimpLoadImage(
       blob,
       (img) => img.toBlob(resolve),
